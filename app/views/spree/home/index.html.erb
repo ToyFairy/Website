@@ -1,0 +1,56 @@
+<% @body_id = 'home' %>
+
+<div class="homepage-hero-image mb-3 position-relative">
+  <img class="lazyload hero-image position-absolute"
+    data-src="<%= asset_path('homepage/main_banner.jpg') %>"
+    data-srcset="<%= image_source_set('homepage/main_banner') %>"
+    alt="<%= Spree.t('homepage.summer_collection')%>" />
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+
+      <div class="homepage-taxon-box mb-3">
+        <%= link_to spree.nested_taxons_path('men') do %>
+          <img class="w-100 lazyload"
+            data-src="<%= asset_path('homepage/category_banner_upper.jpg') %>"
+            data-srcset="<%= image_source_set('homepage/category_banner_upper') %>"
+            alt="<%= Spree.t('homepage.board-games')%>" />
+
+          <div class="homepage-taxon-box-text">
+            <h3><%= Spree.t('homepage.board-games') %></h3>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="homepage-taxon-box">
+        <%= link_to spree.nested_taxons_path('baby-and-toddler-toys') do %>
+          <img class="w-100 lazyload"
+            data-src="<%= asset_path('homepage/category_banner_lower.jpg') %>"
+            data-srcset="<%= image_source_set('homepage/category_banner_lower') %>"
+            alt="<%= Spree.t('homepage.baby-and-toddler-toys')%>" />
+
+          <div class="homepage-taxon-box-text">
+            <h3><%= Spree.t('homepage.baby-and-toddler-toys') %></h3>
+          </div>
+        <% end %>
+      </div>
+
+    </div>
+
+    <div class="col-6 d-flex flex-column">
+
+      <div class="homepage-taxon-box flex-grow-1">
+        <%= link_to spree.nested_taxons_path('women') do %>
+          <img class="w-100 lazyload"
+            data-src="<%= asset_path('homepage/big_category_banner.jpg') %>"
+            data-srcset="<%= image_source_set('homepage/big_category_banner') %>"/>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+</div>

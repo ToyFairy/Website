@@ -1,0 +1,32 @@
+default:
+  navigation:
+    - title: Board Games
+      subtitle: Categories
+      url: /t/board-games
+      items:
+        - :title: age 0-5
+          :url: /t/board-games/age-0-5
+      promo_banners:
+        - subtitle: New collection
+          title: New Board Games
+          url: /t/new-collection/new-board-games
+          image: 'meganav/promo_banner_left-first-category.jpg'
+        - subtitle: Best Sellers
+          title: New Best Sellers
+          url: /t/best-sellers/new-best-sellers
+          image: 'meganav/promo_banner_right-first-category.jpg'
+    - title: Toddler Toys
+      subtitle: Categories
+      url: /t/baby-and-toddler-toys
+      items:
+        - :title: age 0-5
+          :url: /t/baby-and-toddler-toys/age-0-5
+      promo_banners:
+        - subtitle: New collection
+          title: New Toddler Toys
+          url: /t/new-collection/new-toddler-toys
+          image: 'meganav/promo_banner_left-second-category.jpg'
+        - subtitle: Best Sellers
+          title: New Best Sellers
+          url: /t/sbest-sellers/new-best-sellers
+          image: 'meganav/promo_banner_right-second-category.jpg'
